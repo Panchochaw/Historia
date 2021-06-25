@@ -3,6 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    background: rgb(196, 191, 196);
 }
 /*------------------menu-------------------*/
 #menu a{

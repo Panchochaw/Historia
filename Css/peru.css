@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    color: rgb(241, 110, 241);
+}
+.container-fluid h3{
+    text-align: center;
+    color: blueviolet;
+}
+.container-fluid p{
+    text-align: justify;
+}
+.container-fluid img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.buu{
+    border-radius: 3rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    color: var(--white-text);
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+    letter-spacing: .1rem;
+    align-self: flex-end;
+}
