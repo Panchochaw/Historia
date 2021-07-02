@@ -1,5 +1,13 @@
 h1{
     text-align: center;
+    color: blueviolet;
+}
+#cu{
+    color: white;
+    text-shadow: 2px 2px blue;
+}
+#rojo{
+    color: crimson;
 }
 .home{
     margin-top: 10px;
@@ -86,4 +94,6 @@ p{
     grid-row-start: span 2;
 }
 
-/*   media cueris  */
+#dav{
+    background-color: rgb(20, 20, 20);
+}
