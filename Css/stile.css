@@ -86,6 +86,14 @@ body{
 #color{
 	color: cornsilk;
 }
+#mar{
+	color: cornsilk;
+	margin: 20px;
+}
+h3{
+	color: rgb(54, 121, 121);
+	margin-top: 25px;
+}
 /*----------------------pantalla ancha------------------*/
 @media (max-width:1200px){
     #local{
