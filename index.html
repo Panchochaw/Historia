@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/stile.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-
+   
 
     
     
@@ -18,9 +18,84 @@
 
   </head>
   <body>
-      <!--cabecera-->
-     
 
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Registrarse</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip01" class="form-label">First name</label>
+              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltip02" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+              <div class="valid-tooltip">
+                Looks good!
+              </div>
+            </div>
+            <div class="col-md-4 position-relative">
+              <label for="validationTooltipUsername" class="form-label">Username</label>
+              <div class="input-group has-validation">
+                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                <div class="invalid-tooltip">
+                  Please choose a unique and valid username.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 position-relative">
+              <label for="validationTooltip03" class="form-label">City</label>
+              <input type="text" class="form-control" id="validationTooltip03" required>
+              <div class="invalid-tooltip">
+                Please provide a valid city.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip04" class="form-label">State</label>
+              <select class="form-select" id="validationTooltip04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-tooltip">
+                Please select a valid state.
+              </div>
+            </div>
+            <div class="col-md-3 position-relative">
+              <label for="validationTooltip05" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="validationTooltip05" required>
+              <div class="invalid-tooltip">
+                Please provide a valid zip.
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+          </form>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Registrarse</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
       <!--  barra de navegacion -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
         <div class="container-fluid" >
@@ -38,10 +113,6 @@
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#equipo">Equipo</a>
-                </li>
-
-                <li class="nav-item">
                   <a class="nav-link" href="#contenedor-formulario">Contacto</a>
                 </li>
                 
@@ -51,7 +122,7 @@
                       <li><a href="internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
                       <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
                       <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
-                      <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
+                      <li><a href="#" class="dropdown-item" >Cultura China</a></li>
                     </ul>
                 </li>
 
@@ -83,12 +154,12 @@
 	<main id=uwu>
 		<div class="pelicula-principal">
 			<div class="contenedor">
-				<h3 class="titulo">Cultura Mochica</h3>
+				<h3 id="tod" class="titulo">HistoriaInador</h3>
 				<p class="descripcion">
-					La Cultura Mochica o Moche, destacan en sus cerámicas consideradas los mejores del Perú antiguo así como también en su arquitectura representadas en la Huaca del Sol y de la Luna, era una sociedad de América del Sur, con ciudades, templos, canales y granjas ubicadas a lo largo de la costa árida en una estrecha franja entre el Océano Pacífico y la Cordillera de los Andes del Perú.
+					El HistoriaInador muestra informacion relevante de diversas culturas del pais y del mundo, todas las culturas en una sola pagina, enterate de la diversidad cultural de tu Pais de una manera didactica y divertida.
 				</p>
 				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-				<button role="button" class="boton"><a href="internos/mochica.html"><i class="fas fa-info-circle"></i>Más información</a></button>
+				<button role="button" class="boton"><a href="#"><i class="fas fa-info-circle"></i>Más información</a></button>
 			</div>
 		</div>
 
@@ -104,68 +175,69 @@
 				<div class="contenedor-carousel">
 					<div class="carousel">
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/l1umS1sgDm8/maxresdefault.jpg" alt=""></a>
+							<a href="internos/paracas.html"><img src="https://i.ytimg.com/vi/l1umS1sgDm8/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/Dnt1ulzQP_w/maxresdefault.jpg" alt=""></a>
+							<a href="internos/tiahuanaco.html"><img src="https://i.ytimg.com/vi/Dnt1ulzQP_w/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/r2Si8FHs_2s/maxresdefault.jpg" alt=""></a>
+							<a href="internos/chavin.html"><img src="https://i.ytimg.com/vi/r2Si8FHs_2s/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/M1vk3CPop-0/maxresdefault.jpg" alt=""></a>
+							<a href="internos/nazca.html"><img src="https://i.ytimg.com/vi/M1vk3CPop-0/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/j1zjx4jg-vI/maxresdefault.jpg" alt=""></a>
+							<a href="internos/chimu.html"><img src="https://i.ytimg.com/vi/j1zjx4jg-vI/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="https://i.ytimg.com/vi/GKw4MGBL-QM/maxresdefault.jpg" alt=""></a>
+							<a href="internos/mochica.html"><img src="https://i.ytimg.com/vi/GKw4MGBL-QM/maxresdefault.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://supercurioso.com/wp-content/uploads/2019/01/Cultura-egipcia.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/OIP.7LehcxtYIYqBhxHdnWkSBQHaEK?pid=ImgDet&rs=1" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/R.8cbc1397716e1c05f1fffe4f09310577?rik=%2bQM9eQw%2f9lg%2f2g&pid=ImgRaw" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://www.caracteristicas.co/wp-content/uploads/2017/05/cultura-egipcia-2-e1570070875993.jpg" alt=""></a>
+						</div>
+            <div class="pelicula">
+							<a href="#"><img src="https://th.bing.com/th/id/OIP.ykwYjP48_qn7Sp-mlRw3nAHaFS?pid=ImgDet&rs=1" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://culturas.online/wp-content/uploads/cultura-griega-2.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/R.9d4ffabe1ab971aa6ebbdd1773df9459?rik=NDgC%2bPUR%2fI0HDg&riu=http%3a%2f%2fmoreno6tohistoria.weebly.com%2fuploads%2f2%2f2%2f8%2f8%2f22887774%2f9481010_orig.jpg&ehk=ohZI9GxKCKmXnPAxamaQbU6KcqHwbjo3g%2ft9Tv9EFgA%3d&risl=&pid=ImgRaw" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://cdn.slidesharecdn.com/ss_thumbnails/culturagriegaoriginal2-131121210934-phpapp02-thumbnail-4.jpg?cb=1385068266" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://img.vixdata.io/pd/jpg-large/es/sites/default/files/imj/nuestrorumbo/g/grecia-2.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://www.lifeder.com/wp-content/uploads/2017/09/cultura_griega.jpg" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/OIP.dXFz7ugAl6mHb6yzsYfEsQHaEJ?pid=ImgDet&w=2048&h=1149&rs=1" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/OIP.Iq72zap3pskK83pWaQ_iDgHaFj?pid=ImgDet&rs=1" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/OIP.h67z_GBRTT1BBPLr7M2Q2gHaEm?pid=ImgDet&w=660&h=410&rs=1" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://cdn.slidesharecdn.com/ss_thumbnails/cultura-de-china-completo-150804154930-lva1-app6892-thumbnail-4.jpg?cb=1438703523" alt=""></a>
 						</div>
 						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
+							<a href="#"><img src="https://th.bing.com/th/id/R.ddaa9fe2727c96587cf7bcfdc27a9122?rik=Yz50C%2be0ADRu3g&pid=ImgRaw" alt=""></a>
 						</div>
-						<div class="pelicula">
-							<a href="#"><img src="" alt=""></a>
-						</div>
+						
 					</div>
 				</div>
 
@@ -179,40 +251,22 @@
           <div class="carousel-inner">
 
             <div class="carousel-item active" data-bs-interval="3000">
-              <img src="img/mapi.jpg" class="d-block w-100" alt="imagen1">
+              <img src="https://1.bp.blogspot.com/-eLnT-xmt9vM/XXFNDAW6V8I/AAAAAAAAClE/50zk2m3mW5wYeAzhesGVl4w8DFPwRz_YgCLcBGAs/w1200-h630-p-k-no-nu/CULTURAS%2BPERUANAS.jpg" class="d-block w-100" alt="imagen1">
             </div>
 
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/cus.jpg" class="d-block w-100" alt="imagen2">
+              <img src="https://th.bing.com/th/id/OIP.KCcO99lhmkIgVKtEz7c1gwHaDB?pid=ImgDet&rs=1" class="d-block w-100" alt="imagen2">
             </div>
 
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/cerr.jpg" class="d-block w-100" alt="imagen3">
+              <img src="https://1.bp.blogspot.com/_OyXxaB2ambA/TMv00TLlZ2I/AAAAAAAAABQ/ThRH9AFbJB8/s1600/Partenon.jpg" class="d-block w-100" alt="imagen3">
             </div>
 
             <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/esca.jpg" class="d-block w-100" alt="imagen3">
+              <img src="https://th.bing.com/th/id/OIP.PoHG8RyPHJLjRb5PDoAnOwHaEd?pid=ImgDet&rs=1" class="d-block w-100" alt="imagen3">
             </div>
 
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/igle.jpg" class="d-block w-100" alt="imagen3">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/mon.jpg" class="d-block w-100" alt="imagen3">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/plaz.jpg" class="d-block w-100" alt="imagen3">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/por.jpg" class="d-block w-100" alt="imagen3">
-            </div>
-
-            <div class="carousel-item" data-bs-interval="3000">
-              <img src="img/tum.jpg" class="d-block w-100" alt="imagen3">
-            </div>
+           
 
           </div>
 
@@ -246,43 +300,42 @@
 
       <section class="container-fluid">
           <div class="row w-75 mx-auto my-5 servisio-fila">
-            <div class="col-lg-6 col-md-12 col-sm-12
-              d-flex my-5 icono-wrap">
-              <img src="https://image.isu.pub/171126133127-d811a0277e224b6fc4b223095a6653bb/jpg/page_1.jpg" alt="culturas"
-              width="180" height="160">
-              <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Desarrollo</h3>
-                <p class="px-4" id="color">Culturas del Peru</p>
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex my-5 icono-wrap">
+              <a href="internos/peruano.html"><img src="https://image.isu.pub/171126133127-d811a0277e224b6fc4b223095a6653bb/jpg/page_1.jpg" alt="culturas"
+              width="180" height="160"> </a>
+              <div >
+                <h3 class="fs-5 mt-4 px-4 pb-1" id="color" >Culturas Peruanas</h3>
+                <p class="px-4" id="color">Las riquezas que muestra y a la vez esconde nuestro país, te motiva a conocer e investigar un poco más sobre las culturas del Antiguo Perú.</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12 
               d-flex my-5 icono-wrap">
-              <img src="https://www.aviatur.com/source/contenidos/blog/lugares-tradicionales-de-peru-cultura-aviatur.jpg" alt="culturas"
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLlwYk_YF7hb_KILqr_L6_4Dl2HNvgCCJYrw&usqp=CAU" alt="culturas"
               width="180" height="160">
               <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Desarrollo</h3>
-                <p class="px-4" id="color">Culturas del Peru</p>
+                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Cultura Egipcia</h3>
+                <p class="px-4" id="color">La cultura del Antiguo Egipto se conforma a partir de la forma de vida, costumbres y tradiciones existentes en la sociedad egipcia de la Antigüedad.</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12
               d-flex my-5 icono-wrap">
-              <img src="https://image.isu.pub/171126133127-d811a0277e224b6fc4b223095a6653bb/jpg/page_1.jpg" alt="culturas"
+              <img src="https://1.bp.blogspot.com/_OyXxaB2ambA/TMv00TLlZ2I/AAAAAAAAABQ/ThRH9AFbJB8/s1600/Partenon.jpg" alt="culturas"
               width="180" height="160">
               <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Desarrollo</h3>
-                <p class="px-4" id="color">Culturas del Peru</p>
+                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Cultura Griega</h3>
+                <p class="px-4" id="color">La cultura griega ha evolucionado durante toda su historia, con sus inicios en las civilizaciones minoica y Civilización micénica continuando con la notable Grecia clásica</p>
               </div>
             </div>
 
             <div class="col-lg-6 col-md-12 col-sm-12 
               d-flex my-5 icono-wrap">
-              <img src="https://www.aviatur.com/source/contenidos/blog/lugares-tradicionales-de-peru-cultura-aviatur.jpg" alt="culturas"
+              <img src="https://image.slidesharecdn.com/china-140918005842-phpapp01/95/cultura-china-1-638.jpg?cb=1411002038" alt="culturas"
               width="180" height="160">
               <div>
-                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Desarrollo</h3>
-                <p class="px-4" id="color">Culturas del Peru</p>
+                <h3 class="fs-5 mt-4 px-4 pb-1" id="color">Cultura China</h3>
+                <p class="px-4" id="color">Algunos de los exponentes de la cultura china son su mitología, su filosofía, su música y su arte.</p>
               </div>
             </div>
 
@@ -293,9 +346,9 @@
 
       <section>
           <div class="w-75 m-auto text-center" id="equipo">
-            <h1 class="mb-5 fs-2" id="color">Equipo pequeño con <span class="text-primary">Resultados grandes</span></h1>
-            <p class="fs-4" id="color">en este nuevo mundo la historia del pasado te importa, conoce todo al respecto de tu pais y quierelo mas,
-              que esperas para aprender empieza a cambiar el furturo xd :3
+            <h1 class="mb-5 fs-2" id="color">HistoriaInador <span class="text-primary">enseñando sobre culturas</span></h1>
+            <p class="fs-4" id="color">En este nuevo mundo la historia del pasado te importa, conoce todo al respecto de tu pais y quierelo mas,
+              que esperas para aprender, empieza a cambiar el furturo conociendo tu pasado.
             </p>
           </div>
           <div class="mt-5 text-center">
@@ -363,7 +416,7 @@
 
               <div class="mb-3">
                 <input type="text" class="form-control" id="nombre"
-                placeholder="David Escalante"
+                placeholder="Carlos Carlos ..."
                 required>
               </div>
 
@@ -388,6 +441,28 @@
       </section>
 
       <!-- comentarios -->
+       <!-- video de fondo -->
+
+  <div class="video-player" id="videoPlayer">
+    <video width="100%" controls autoplay id="myVideo">
+        <source src="img/vid.mp4" type="video/mp4">
+    </video>
+    <img src="close.png" class="close-btn" onclick="stopVideo()">
+</div>
+<script>
+var videoPlayer=document.getElementById("videoPlayer");
+var myVideo=document.getElementById("myVideo")
+
+function stopVideo(){
+    videoPlayer.style.display = "none";
+    myVideo.pause ();
+}
+
+function playVideo(file){
+    myVideo.src = file;
+    videoPlayer.style.display = "block"
+}
+</script>
 
 
     <!--pie de pagina-->
@@ -395,6 +470,7 @@
       <footer class="w-100 d-flex align-items-center justify-content-center
        flex-wrap">
         <p class="fs-5 px-3 pt-3">Historiainador. &copy; todos los derechos reservados 2021</p>
+        
         <div id="iconos">
           <a href="https://web.facebook.com/david.escalante.3517/"><i class="bi bi-facebook"></i></a>
           <a href="#"><i class="bi bi-instagram"></i></a>

@@ -3,7 +3,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background: rgb(71, 69, 71);
+    background-image: url(../img/video.gif);
 }
 /*------------------menu-------------------*/
 #menu{
@@ -93,6 +93,9 @@ body{
 h3{
 	color: rgb(54, 121, 121);
 	margin-top: 25px;
+}
+#tod{
+	color: white;
 }
 /*----------------------pantalla ancha------------------*/
 @media (max-width:1200px){
@@ -273,6 +276,18 @@ header nav a.activo {
 
 .pelicula-principal .boton i {
 	margin-right: 1.25em;
+}
+/*vide */
+.video-player{
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   display: none;
+}
+video:focus{
+   outline:none;  
 }
 
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
