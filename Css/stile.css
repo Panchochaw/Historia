@@ -176,7 +176,7 @@ footer p{
 
 :root {
 	--rojo: #E50914;
-	--fondo: #000000;
+	
 }
 
 * {
@@ -187,7 +187,7 @@ footer p{
 
 
 body {
-	background: var(--fondo);
+	background: url("https://s6.gifyu.com/images/1e13f4f495fd3e859.gif");
 	font-family: 'Open Sans', sans-serif;
 }
 
