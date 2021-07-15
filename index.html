@@ -7,98 +7,59 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="Css/stile.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
-   
-
+ 
     
     
     <title>HistoriaInador</title>
     <link rel="shortcut icon" href="img/per.png" type="image/x-icon">
 
-    
+    <!-- firebase -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDYGjrvhFMIVZOLgCbE2dbZH9eq8WosmT4",
+        authDomain: "historiainador-e93b0.firebaseapp.com",
+        projectId: "historiainador-e93b0",
+        storageBucket: "historiainador-e93b0.appspot.com",
+        messagingSenderId: "676840114786",
+        appId: "1:676840114786:web:fb8afc873f05d1f79fdf3b",
+        measurementId: "G-ZF298RHG4B"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+
 
   </head>
 
   <body>
-
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Registrarse</button>
-
-
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form>
-          <form class="row g-3 needs-validation" novalidate>
-            <div class="col-md-4 position-relative">
-              <label for="validationTooltip01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
-              <div class="valid-tooltip">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 position-relative">
-              <label for="validationTooltip02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-              <div class="valid-tooltip">
-                Looks good!
-              </div>
-            </div>
-            <div class="col-md-4 position-relative">
-              <label for="validationTooltipUsername" class="form-label">Username</label>
-              <div class="input-group has-validation">
-                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                <div class="invalid-tooltip">
-                  Please choose a unique and valid username.
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 position-relative">
-              <label for="validationTooltip03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationTooltip03" required>
-              <div class="invalid-tooltip">
-                Please provide a valid city.
-              </div>
-            </div>
-            <div class="col-md-3 position-relative">
-              <label for="validationTooltip04" class="form-label">State</label>
-              <select class="form-select" id="validationTooltip04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-              <div class="invalid-tooltip">
-                Please select a valid state.
-              </div>
-            </div>
-            <div class="col-md-3 position-relative">
-              <label for="validationTooltip05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationTooltip05" required>
-              <div class="invalid-tooltip">
-                Please provide a valid zip.
-              </div>
-            </div>
-            <div class="col-12">
-              <button class="btn btn-primary" type="submit">Submit form</button>
-            </div>
-          </form>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Registrarse</button>
-      </div>
+    <input type="checkbox" id="cerrar">
+    <label for="cerrar" id="btn-cerrar" id="p"><center>X</center></label>
+  <div class="modal">
+    <div class="contenido">
+      
+      <h2>Visita nuestra pagina</h2>
+      <img src="http://lorempixel.com/200/200">
     </div>
   </div>
-</div>
 
+
+   
+<!-- jfjdfas-->
 
  
       <!--  barra de navegacion -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
+
+      <nav class="navbar navbar-expand-lg" id="menu">
         <div class="container-fluid" >
           <a class="navbar-brand" href="index.html">
             <h1 id="pepe">Historiainador</h1>
@@ -116,6 +77,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#contenedor-formulario">Contacto</a>
                 </li>
+
                 
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Culturas</a>
@@ -136,6 +98,37 @@
                       <li><a href="#" class="dropdown-item" >Torneos</a></li>
                     </ul>
                 </li>
+                <!-- rgistro de usuario xd -->
+                
+                    
+                      
+                      <button type="button" class="btn btn-primary btn-flotante" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Registrarse ...
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header text-primary">
+                              <h5 class="modal-title" id="exampleModalLabel">REGISTRARSE</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="form-floating mb-3 text-primary">
+                              <input  type="email" class="form-control" id="email" placeholder="name@example.com">
+                              <label for="floatingInput">Ingrese su correo</label>
+                            </div>
+                              <div class="form-floating text-primary">
+                                <input type="password" class="form-control" id="contrasena" placeholder="Password">
+                                <label for="floatingPassword">ingresar contraseña</label>
+                              </div>
+                            <div class="modal-footer text-primary">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                              <button onclick="registrar()" type="button" class="btn btn-primary">Enviar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
               </ul>
             <form class="d-flex">
@@ -343,6 +336,10 @@
           </div>
       </section>
 
+      <!-- carucel -->
+
+
+
         <!--la empresa xd-->
 
       <section>
@@ -479,6 +476,9 @@ function playVideo(file){
           <a href="#"><i class="bi bi-whatsapp"></i></a>
         </div>
       </footer>
+
+
+      <script src="./Css/app.js"></script>
       <script src="js/main.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
