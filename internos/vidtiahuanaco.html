@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="../Css/stile.css">
+    <link rel="stylesheet" href="../Css/video.css">
+    <title>HistoriaInador</title>
+    <link rel="shortcut icon" href="../img/per.png" type="image/x-icon">
+</head>
+<body>
+<!-- navegacion xd -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="../index.html">
+            <h1 id="pepe">Historiainador</h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Culturas</a>
+                    <ul class="dropdown-menu bg-dark" >
+                      <li><a href="../internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
+                      <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
+                      <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
+                      <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
+                    </ul>
+                </li>
+  
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
+                    <ul class="dropdown-menu bg-dark" >
+                      
+                      <li><a href="#" class="dropdown-item" >Videos</a></li>
+                      <li><a href="#" class="dropdown-item" >Discucion</a></li>
+                      <li><a href="#" class="dropdown-item" >Torneos</a></li>
+                    </ul>
+                </li>
+  
+              </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="email" placeholder="Correo Electronico" aria-label="Email">
+              <button class="btn btn-primary btn-primary-outline-success" type="button">Registrarse</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+      <!-- videos xd  -->
+    
+    <div class="container"> 
+        <h1>Videos cultura Tihahuanaco</h1>
+        <div class="row">
+            <div class="col">
+                <div class="feature-img">
+                    <img src="https://i.ytimg.com/vi/GKw4MGBL-QM/maxresdefault.jpg" width="100%">
+                    <img src="../img/play.png" class="play-btn" onclick="playVideo('vid.mp4')">
+                </div>
+            </div>
+            <div class="col">
+                <div class="small-img-row" id="a">
+                    <div class="small-img">
+                        <img src="https://encolombia.com/wp-content/uploads/2021/03/Cultura-Mochica-o-Moche-330x205.jpg" >
+                        <img src="../img/play.png" class="play-btn"  onclick="playVideo('vid.mp4')" >
+                    </div>
+        
+                    <p> agregando multiples videos en la web o haciendo
+                         una galleria de videos</p>
+                </div>
+                <div class="small-img-row" id="a">
+                    <div class="small-img">
+                        <img src="https://www.go2peru.com/destinos/large/var_tumi_pro.jpg" >
+                        <img src="../img/play.png" class="play-btn"  onclick="playVideo('vid.mp4')" >
+                    </div>
+        
+                    <p> agregando multiples videos en la web <br>o haciendo
+                         una galleria de videos</p>
+                </div>
+                <div class="small-img-row" id="a">
+                    <div class="small-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gsBqiWd-SIwxrM5MyjsS0tXibXXYOrt5mA&usqp=CAU" >
+                        <img src="../img/play.png" class="play-btn" onclick="playVideo('BlackWidow.mp4')">
+                    </div>  <p> agregando multiples videos en la web <br>o haciendo
+                         una galleria de videos</p>
+        
+                  
+                </div>
+            </div>
+             </div>
+            </div>
+        <div class="video-play" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="vid.mp4" type="video/mp4">
+            </video>
+            <img src="../img/close.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        
+        <div class="video-play" id="videoPlayer">
+            <video width="100%" controls  id="myVideo">
+                <source src="BlackWidow.mp4" type="video/mp4">
+            </video>
+            <img src="../img/close.png" class="close-btn" onclick="stopVideo()">
+        </div>
+        <script>
+        var videoPlayer=document.getElementById("videoPlayer");
+        var myVideo=document.getElementById("myVideo")
+        
+        function stopVideo(){
+            videoPlayer.style.display = "none";
+            myVideo.pause ();
+        }
+        
+        function playVideo(file){
+            myVideo.src = file;
+            videoPlayer.style.display = "block"
+        }
+        </script>
+
+        <!--pie de pagina-->
+
+      <footer class="w-100 d-flex align-items-center justify-content-center
+      flex-wrap">
+       <p class="fs-5 px-3 pt-3">Historiainador. &copy; todos los derechos reservados 2021</p>
+       
+       <div id="iconos">
+         <a href="https://web.facebook.com/david.escalante.3517/"><i class="bi bi-facebook"></i></a>
+         <a href="#"><i class="bi bi-instagram"></i></a>
+         <a href="#"><i class="bi bi-whatsapp"></i></a>
+       </div>
+     </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+     
+     <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
