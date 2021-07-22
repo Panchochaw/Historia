@@ -55,7 +55,16 @@
 
    
 <!-- jfjdfas-->
-
+<body class="naval">
+  <!-- login modal ga -->
+  <input type="checkbox" id="cerr">
+  <label for="cerr" id="btn-cerr">X</label>
+  <div class="mod">
+    <div class="contenido">
+      
+      <video class="vid"  autoplay src="./img/entrada.mp4"></video>
+    </div>
+  </div> 
  
       <!--  barra de navegacion -->
 
@@ -93,9 +102,9 @@
                   <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
                     <ul class="dropdown-menu  bg-dark" >
                       
-                      <li><a href="#" class="dropdown-item" >facebook</a></li>
-                      <li><a href="#" class="dropdown-item" >Discucion</a></li>
-                      <li><a href="#" class="dropdown-item" >Torneos</a></li>
+                      <li><a href="#" class="dropdown-item" >Videos</a></li>
+                      <li><a href="rompe/rompe.html" class="dropdown-item" >Rompecabezas</a></li>
+                      <li><a href="#" class="dropdown-item" >VideoJuegos</a></li>
                     </ul>
                 </li>
                
@@ -122,7 +131,9 @@
       
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-
+        <div>
+          <img src="img/pe.jpg" alt="" height="300px" width="200px">
+        </div>
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header text-primary">
@@ -138,7 +149,7 @@
                 <label for="floatingPassword">ingresar contraseña</label>
               </div>
             <div class="modal-footer text-primary">
-              <button type="button" class="btn btn-primary" onclick="exampleM" >Ingresar</button>
+              
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
               <button onclick="registrar()" type="button" class="btn btn-primary">Enviar</button>
 
@@ -183,7 +194,8 @@
 					El HistoriaInador muestra informacion relevante de diversas culturas del pais y del mundo, todas las culturas en una sola pagina, enterate de la diversidad cultural de tu Pais de una manera didactica y divertida.
 				</p>
 				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-				<button role="button" class="boton"><a href="#"><i class="fas fa-info-circle"></i>Más información</a></button>
+        
+				<button role="button" class="boton"><a href="#intro"><i class="fas fa-info-circle"></i>Más información</a></button>
 			</div>
 		</div>
 

@@ -1,0 +1,27 @@
+/*Hoja de estilos*/
+#entorno {
+	display: block;
+	margin: 0 auto;
+	
+    
+}
+
+#fondo {
+
+	-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+		
+	opacity: 0.7;
+	width: 601px;
+	height: 548px;
+	
+
+  
+}
+body{
+	background-image: url(img/1.gif);
+}
+h1{
+	color: white;
+    text-align: center;
+}
