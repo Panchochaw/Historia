@@ -15,12 +15,12 @@ body{
 	background-color: var(--fondo);
 	position: fixed;
 	
-	color: rgb(255, 255, 255);
+	color: rgb(169, 243, 159);
 }
 #menu a{
 
 	
-	color: rgb(255, 255, 255);
+	color: rgb(121, 248, 62);
 }
 #menu button{
     font-size: 18px;
