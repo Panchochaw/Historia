@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <title>HistoriaInador</title>
+    <link rel="shortcut icon" href="../img/per.png" type="image/x-icon">
+    <link rel="stylesheet" href="musis.css">
+  </head>
+  <body>
+    
+    <!--navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="../index.html">
+          <h1 id="pepe">Historiainador</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Culturas</a>
+                  <ul class="dropdown-menu bg-dark" >
+                    <li><a href="../internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
+                    <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
+                    <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
+                    <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
+                  </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
+                  <ul class="dropdown-menu bg-dark" >
+                    
+                    <li><a href="#" class="dropdown-item" >Videos</a></li>
+                      <li><a href="../rompe/rompe.html" class="dropdown-item" >Rompecabezas</a></li>
+                      <li><a href="#" class="dropdown-item" >VideoJuegos</a></li>
+                  </ul>
+              </li>
+
+            </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="email" placeholder="En Mantenimiento..." aria-label="Email">
+            <button class="btn btn-primary btn-primary-outline-success" type="button">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- musica -->
+  <div id="gif">
+    <br>
+    <br>
+    <br>
+    <h1 id=pepe><center><em>Relatos, Mitos, Leyendas </em></center></h1>
+   
+    <p id=owo>
+   <img src="musica.jpg" width="200" height="200" id="tre"> <audio id="audio" preload="auto" tabindex="0" controls="" >
+        <source src="shilo.mp3">
+      </audio></p>
+      <p id=owo>
+      <ul id="playlist">
+         <h3> Elija una historia u relato que quiera Escuchar </h3>
+              <li class="active">
+                 <a href="../music/musi4.mpeg">
+                   Relato 1
+                 </a>
+              </li>
+              
+              <li>
+                  <a href="musi1.mpeg">
+                    Relato 2
+                  </a>
+              </li>
+              <li>
+                  <a href="musi2.mpeg">
+                    Relato3 
+                  </a>
+              </li>
+              <li>
+                  <a href="musi3.mpeg">
+                    Relato 4
+                  </a>
+              </li>
+              
+            </li>
+          
+        </ul>
+        </p>
+
+        <!-- videos -->
+        <div class="pelicula-principal">
+          <div class="contenedor">
+            <center><button role="button" class="boton" onclick="playVideo('')"><i class="fas fa-play"></i>Reproducir</button></center>
+            </button>
+          </div>
+        </div>
+    <!-- pie de pagina -->
+    <footer class="w-100 d-flex align-items-center justify-content-center
+       flex-wrap">
+        <p class="fs-5 px-3 pt-3">Historiainador. &copy; todos los derechos reservados 2021</p>
+        <div id="iconos">
+          <a href="https://web.facebook.com/david.escalante.3517/"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="C:\Users\gomza\OneDrive\Escritorio\fb\Historia-master/ma.js"></script>
+  </div>
+
+  <div class="video-player" id="videoPlayer">
+    <video width="100%" controls   id="myVideo">
+        <source src="paracas.mp4" type="video/mp4">
+    </video>
+    <img src="../img/close.png" class="close-btn" onclick="stopVideo()">
+</div>
+
+      <div class="video-playerr" id="videoPlayerr"> <iframe  src="https://prezi.com/p/pb7cc-xu4e1b/embed/"  id="myVideoo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  allow="autoplay; fullscreen" width="100%" height="750vmin"></iframe>
+    <img src="../img/close.png" class="close-btn" onclick="stopVideoo()"></div>
+
+  <script>
+    var videoPlayer=document.getElementById("videoPlayer");
+    var videoPlayerr=document.getElementById("videoPlayerr");
+    var myVideo=document.getElementById("myVideo")
+    
+    function stopVideo(){
+        videoPlayer.style.display = "none";
+        
+        myVideo.pause();
+    }  
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block"
+       
+    }function stopVideoo(){
+        
+        videoPlayerr.style.display = "none";
+        myVideo.pause();
+    }
+    function plaVideo(file){
+      myVideoo.src = file;
+        
+        videoPlayerr.style.display = "block"
+    }
+    </script>
+          
+
+  </body>
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js' type='text/javascript'/>
+<script>
+//<![CDATA[
+var audio;var playlist;var tracks;var current;initaudio();function initaudio(){current=0;audio=$('audio');playlist=$('#playlist');tracks=playlist.find('li a');len=tracks.length-1;audio[0].volume=1;playlist.find('a').click(function(e){e.preventDefault();link=$(this);current=link.parent().index();runaudio(link,audio[0])});audio[0].addEventListener('ended',function(e){current++;if(current>len){current=0;link=playlist.find('a')[0]}else{link=playlist.find('a')[current]}runaudio($(link),audio[0])})}function runaudio(link,player){player.src=link.attr('href');par=link.parent();par.addClass('active').siblings().removeClass('active');audio[0].load();audio[0].play()}
+//]]>
+</script>
+
+<script src="tr.js"></script>
+</html>

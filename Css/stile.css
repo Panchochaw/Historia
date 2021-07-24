@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+:root {
+	--rojo: #E50914;
+	--fondo: #000000;
+}
 body{
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
@@ -7,23 +11,46 @@ body{
 }
 /*------------------menu-------------------*/
 #menu{
+	width: 100%;
+	background-color: var(--fondo);
+	position: fixed;
 	
-	color: white;
+	color: rgb(255, 255, 255);
 }
 #menu a{
-    font-size: 25px;
-    font-weight: bold;
-    color: #ffffff;
+
 	
+	color: rgb(255, 255, 255);
 }
 #menu button{
     font-size: 18px;
     font-weight: bold;
 	
 }
-#pepe{
-	color: #E50914;
-}
+
+	  #pepa{
+		  float:left;
+		  color: rgb(51, 185, 112);
+		  position:relative;
+
+	  }
+	  #pepa span {
+		  position:absolute;
+		  right: 0;
+		  width: 0;
+		  background: rgb(0, 0, 0);
+		  border-left: 1px solid #000;
+		  animation: maquina 5s infinite alternate steps(17);
+	  }
+	  @keyframes maquina {
+		  from {
+			  width: 100%;
+		  }
+		  to {
+			  width: 0;
+		  }
+	  }
+
 
 /*-----------slider imagenes-----------*/
 .carousel-inner{
@@ -229,7 +256,7 @@ header nav a.activo {
 	font-size: 16px;
 	min-height: 40.62em;
 	color: rgb(255, 255, 255);
-	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://i.ytimg.com/vi/GKw4MGBL-QM/maxresdefault.jpg);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/123a8ac4933606ac9c.png);
 	background-position: center center;
 	background-size: cover;
 	margin-bottom: 3.12em;
@@ -237,6 +264,329 @@ header nav a.activo {
 	align-items: end;
 	
 }
+/*----paracas estilo*/
+.pelicula-principall {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/136ff008ddb5b9e2ab.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principall .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principall .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principall .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principall .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principall .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principall .boton i {
+	margin-right: 1.25em;
+}
+/*tiahuanaco estilo*/
+
+.pelicula-principalll {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/1480e2cd39266391b5.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principalll .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principalll .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principalll .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principalll .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principalll .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principalll .boton i {
+	margin-right: 1.25em;
+}
+/*----paracas chavin*/
+.pelicula-principallll {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/16b9f8dc25ee22bb91.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principallll .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principallll .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principallll .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principallll .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principallll .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principallll .boton i {
+	margin-right: 1.25em;
+}
+
+/*----cultura nazca*/
+.pelicula-principalllll {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/1708f548d011d86930.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principalllll .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principalllll .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principalllll .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principalllll .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principalllll .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principalllll .boton i {
+	margin-right: 1.25em;
+}
+
+/*----cultura chimu*/
+.pelicula-principale {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/18a7f54ec6b72839a6.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principale .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principale .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principale .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principale .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principale .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principale .boton i {
+	margin-right: 1.25em;
+}
+
+/*----cultura mochica */
+.pelicula-principala {
+	font-size: 16px;
+	min-height: 40.62em;
+	color: rgb(255, 255, 255);
+	background: linear-gradient(rgba(46, 48, 48, 0.5) 0%, rgba(0,0,0,.50) 100%), url(https://s6.gifyu.com/images/1968c6e156838ec87b.png);
+	background-position: center center;
+	background-size: cover;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	
+}
+.pelicula-principala .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+}
+
+.pelicula-principala .titulo {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principala .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principala .boton {
+	background: rgba(0,0,0, 0.5);
+	border: none;
+	border-radius: 0.31em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principala .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principala .boton i {
+	margin-right: 1.25em;
+}
+
+
+
+/*sigue con el index*/
+
+
+
 
 .pelicula-principal .contenedor {
 	margin: 0 auto;
@@ -280,7 +630,15 @@ header nav a.activo {
 /*vide */
 .video-player{
     width: 80%;
-    position: absolute;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   display: none;
+}
+.video-playerr{
+    width: 80%;
+    position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
@@ -288,6 +646,14 @@ header nav a.activo {
 }
 video:focus{
    outline:none;  
+}
+.close-btn{
+    position: absolute; 
+    top: 10px; 
+    right: 30px; 
+    width: 30px;
+    cursor:pointer; 
+	
 }
 
 /* ---- ----- ----- Contenedor Titulo y Controles ----- ----- ----- */
@@ -521,4 +887,9 @@ video:focus{
         visibility: visible;
         opacity: 1;
     }
+}
+.lu{
+	border-radius: 50%;
+	background: rgb(35, 226, 252);
+	
 }

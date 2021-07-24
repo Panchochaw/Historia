@@ -8,13 +8,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Css/stile.css">
     <link rel="stylesheet" href="../Css/mochica.css">
     <title>HistoriaInador</title>
     <link rel="shortcut icon" href="../img/per.png" type="image/x-icon">
   </head>
   <body>
-    <h1 id="cu"><b>Cultura Nazca</b> </h1>
+    
     <!--navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
       <div class="container-fluid" >
@@ -37,7 +38,7 @@
                     <li><a href="../internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
                     <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
                     <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
-                    <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
+                    <li><a href="#" class="dropdown-item" >Cultura china</a></li>
                   </ul>
               </li>
 
@@ -45,9 +46,9 @@
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
                   <ul class="dropdown-menu bg-dark" >
                     
-                    <li><a href="#" class="dropdown-item" >facebook</a></li>
-                    <li><a href="#" class="dropdown-item" >Discucion</a></li>
-                    <li><a href="#" class="dropdown-item" >Torneos</a></li>
+                    <li><a href="/music/Playlist.html" class="dropdown-item" >Videos</a></li>
+                      <li><a href="../rompe/rompe.html" class="dropdown-item" >Rompecabezas</a></li>
+                      <li><a href="#" class="dropdown-item" >VideoJuegos</a></li>
                   </ul>
               </li>
 
@@ -59,6 +60,63 @@
         </div>
       </div>
     </nav>
+  <br>
+    <br>
+    <br>
+    <br>
+<!--algo bonito uwu-->
+    <main id=uwu>
+      <div class="pelicula-principalllll">
+        <div class="contenedor">
+          <h3 id="tod" class="titulo">Cultura Nazca</h3>
+          <p class="descripcion">
+            “Nazca es una cultura arqueológica del Antiguo Perú que se desarrolló básicamente en los valles del actual departamento de Ica, alrededor del siglo I y entró en decadencia en el siglo VII. Su centro estaba ubicado en Cahuachi, en el margen izquierdo del Río Grande, en la actual provincia de Nazca.
+            ……… Nazca”.
+          </p>
+          <button role="button" class="boton" onclick="playVideo('./img/entrada.mp4')"><i class="fas fa-play"></i>Reproducir</button>
+  <button role="button" class="boton" id="playVideoo" onclick="plaVideo('https://prezi.com/p/pb7cc-xu4e1b/embed/')"><i class="fas fa-info-circle"></i>Más información
+            </button>
+        </div>
+      </div>
+  
+      <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+          <h3>Imagenes Relacionadas a la cultura Nazca </h3>
+          <div class="indicadores"></div>
+        </div>
+  
+        <div class="contenedor-principal" id="peru">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+  
+          <div class="contenedor-carousel">
+            <div class="carousel">
+              <div class="pelicula">
+                <img src="https://img.pe.class.posot.com/es_pe/2018/12/09/Huaco-Escolares-De-Cultura-Nazca-20181209150910.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3YVepkccAPpEpkog864QOczV7oGNFp7MB0Q&usqp=CAU" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdpY1CFICbtH_WEHcac6rAPRYRj7erk8XlGA&usqp=CAU" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+               <img src="https://hidraulicainca.files.wordpress.com/2011/07/acueducto-2.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzMURLzcYXkeCS0hBelbtWPePYlbpVgQ7WLQ&usqp=CAU" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhen04OWP_nXwTj-Iij20ImBl4c0zbmPGP9g&usqp=CAU" alt="" width="300" height="300">
+              </div>
+             
+              
+            </div>
+          </div>
+  
+          <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </main>
     <!-- informacion -->
     <section class="home">
         <div class="in-flex" id="dav">
@@ -135,8 +193,8 @@
         </div>
         <div class="in-flex">
             <div id="dav">
-              <a href="../internos/galerianazca.html"><b>Galeria</b></a>
-              <p><a href="../internos/vidnazca.html"><b>Videos</b></a></p>
+             <center><button class="lu"> <a href="../internos/galerianazca.html"><b>Galeria</b></a></button></center>
+              <center><button class="lu"><p><a href="../internos/vidnazca.html"><b>Videos</b></a></p></button></center>
             </div>
             <div id="dav"> <b id="rojo">Presentaciones PPT</b>
               <iframe id="power" src="https://onedrive.live.com/embed?cid=C0A8D587A2270671&amp;resid=C0A8D587A2270671%211105&amp;authkey=AJ8njDwsPpgU69k&amp;em=2&amp;wdAr=1.7777777777777777"
@@ -145,14 +203,47 @@
                   <a target="_blank" href="https://office.com/webapps">Office</a>.
               </iframe>
 
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/l1umS1sgDm8" title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-              </iframe>
+              <iframe width="420" height="260" src="https://www.youtube.com/embed/M1vk3CPop-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
     </section>
 
+  
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls   id="myVideo">
+          <source src="paracas.mp4" type="video/mp4">
+      </video>
+      <img src="../img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+  
+        <div class="video-playerr" id="videoPlayerr"> <iframe  src="https://prezi.com/p/pb7cc-xu4e1b/embed/"  id="myVideoo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  allow="autoplay; fullscreen" width="100%" height="750vmin"></iframe>
+      <img src="../img/close.png" class="close-btn" onclick="stopVideoo()"></div>
 
+    <script>
+      var videoPlayer=document.getElementById("videoPlayer");
+      var videoPlayerr=document.getElementById("videoPlayerr");
+      var myVideo=document.getElementById("myVideo")
+      
+      function stopVideo(){
+          videoPlayer.style.display = "none";
+          
+          myVideo.pause();
+      }  
+      function playVideo(file){
+          myVideo.src = file;
+          videoPlayer.style.display = "block"
+         
+      }function stopVideoo(){
+          
+          videoPlayerr.style.display = "none";
+          myVideo.pause();
+      }
+      function plaVideo(file){
+        myVideoo.src = file;
+          
+          videoPlayerr.style.display = "block"
+      }
+      </script>
     <!-- pie de pagina -->
     <footer class="w-100 d-flex align-items-center justify-content-center
        flex-wrap">
@@ -166,6 +257,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="main.js"></script>
-   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+      <script src="C:\Users\gomza\OneDrive\Escritorio\fb\Historia-master/ma.js"></script>
   </body>
 </html>

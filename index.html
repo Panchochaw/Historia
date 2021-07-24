@@ -42,8 +42,7 @@
   </head>
 
   <body>
-    <input type="checkbox" id="cerrar">
-    <label for="cerrar" id="btn-cerrar" id="p"><center>X</center></label>
+
   <div class="modal">
     <div class="contenido">
       
@@ -55,23 +54,13 @@
 
    
 <!-- jfjdfas-->
-<body class="naval">
-  <!-- login modal ga -->
-  <input type="checkbox" id="cerr">
-  <label for="cerr" id="btn-cerr">X</label>
-  <div class="mod">
-    <div class="contenido">
-      
-      <video class="vid"  autoplay src="./img/entrada.mp4"></video>
-    </div>
-  </div> 
- 
+
       <!--  barra de navegacion -->
 
       <nav class="navbar navbar-expand-lg" id="menu">
         <div class="container-fluid" >
           <a class="navbar-brand" href="index.html">
-            <h1 id="pepe">Historiainador</h1>
+            <h1 id="pepa">Historiainador <span>&#114;</span></h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent " aria-controls="navbarSupportedContent " aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -120,7 +109,9 @@
         
 
       </nav>
-
+<br>
+<br>
+<br>
        <!-- rgistro de usuario xd -->
                 
                     
@@ -132,11 +123,13 @@
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div>
-          <img src="img/pe.jpg" alt="" height="300px" width="200px">
+          <center><img class="perry" src="img/pe.jpg" alt="" height="300px" width="200px"></center>
         </div>
         <div class="modal-dialog">
           <div class="modal-content">
+            
             <div class="modal-header text-primary">
+              
               <h5 class="modal-title" id="exampleModalLabel">REGISTRARSE</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -193,9 +186,9 @@
 				<p class="descripcion">
 					El HistoriaInador muestra informacion relevante de diversas culturas del pais y del mundo, todas las culturas en una sola pagina, enterate de la diversidad cultural de tu Pais de una manera didactica y divertida.
 				</p>
-				<button role="button" class="boton"><i class="fas fa-play"></i>Reproducir</button>
-        
-				<button role="button" class="boton"><a href="#intro"><i class="fas fa-info-circle"></i>Más información</a></button>
+				<button role="button" class="boton" onclick="playVideo('./img/entrada.mp4')"><i class="fas fa-play"></i>Reproducir</button>
+        <button role="button" class="boton" id="playVideoo" onclick="plaVideo('https://prezi.com/p/pb7cc-xu4e1b/embed/')"><i class="fas fa-info-circle"></i>Más información
+          </button>
 			</div>
 		</div>
 
@@ -484,26 +477,43 @@
       
        <!-- video de fondo -->
 
-  <div class="video-player" id="videoPlayer">
-    <video width="100%" controls autoplay id="myVideo">
-        <source src="img/vid.mp4" type="video/mp4">
-    </video>
-    <img src="close.png" class="close-btn" onclick="stopVideo()">
-</div>
-<script>
-var videoPlayer=document.getElementById("videoPlayer");
-var myVideo=document.getElementById("myVideo")
+       <div class="video-player" id="videoPlayer">
+        <video width="100%" controls autoplay   id="myVideo">
+            <source src="./img/entrada.mp4" type="video/mp4">
+        </video>
+        <img src="./img/close.png" class="close-btn" onclick="stopVideo()">
+    </div>
+    
+          <div class="video-playerr" id="videoPlayerr"> <iframe  src="https://prezi.com/p/pb7cc-xu4e1b/embed/"  id="myVideoo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" width="100%" height="750vmin"></iframe>
+        <img src="./img/close.png" class="close-btn" onclick="stopVideoo()"></div>
 
-function stopVideo(){
-    videoPlayer.style.display = "none";
-    myVideo.pause ();
-}
-
-function playVideo(file){
-    myVideo.src = file;
-    videoPlayer.style.display = "block"
-}
-</script>
+    <script>
+    var videoPlayer=document.getElementById("videoPlayer");
+    var videoPlayerr=document.getElementById("videoPlayerr");
+    var myVideo=document.getElementById("myVideo")
+    
+    function stopVideo(){
+        videoPlayer.style.display = "none";
+        
+        myVideo.pause();
+    }  
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block"
+       
+    }function stopVideoo(){
+        
+        videoPlayerr.style.display = "none";
+        myVideo.pause();
+    }
+    function plaVideo(file){
+      myVideoo.src = file;
+        
+        videoPlayerr.style.display = "block"
+    }
+    </script>
+          
+  
 
 
     <!--pie de pagina-->

@@ -8,13 +8,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Css/stile.css">
     <link rel="stylesheet" href="../Css/mochica.css">
     <title>HistoriaInador</title>
     <link rel="shortcut icon" href="../img/per.png" type="image/x-icon">
   </head>
   <body>
-    <h1 id="cu"><b>Cultura Mochica</b> </h1>
+    
     <!--navegacion-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 navbar-dark bg-dark" id="menu">
       <div class="container-fluid" >
@@ -37,7 +38,7 @@
                     <li><a href="../internos/peruano.html" class="dropdown-item" >Cultura Peruana</a></li>
                     <li><a href="#" class="dropdown-item" >Cultura Ejipcia</a></li>
                     <li><a href="#" class="dropdown-item" >Cultura Griega</a></li>
-                    <li><a href="#" class="dropdown-item" >Cultura Nordica</a></li>
+                    <li><a href="#" class="dropdown-item" >Cultura china</a></li>
                   </ul>
               </li>
 
@@ -45,9 +46,9 @@
                 <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" >Entretenimiento</a>
                   <ul class="dropdown-menu bg-dark" >
                     
-                    <li><a href="#" class="dropdown-item" >facebook</a></li>
-                    <li><a href="#" class="dropdown-item" >Discucion</a></li>
-                    <li><a href="#" class="dropdown-item" >Torneos</a></li>
+                    <li><a href="../music/Playlist.html" class="dropdown-item" >Videos</a></li>
+                      <li><a href="../rompe/rompe.html" class="dropdown-item" >Rompecabezas</a></li>
+                      <li><a href="#" class="dropdown-item" >VideoJuegos</a></li>
                   </ul>
               </li>
 
@@ -59,6 +60,67 @@
         </div>
       </div>
     </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+<!--algo bonito uwu-->
+    <main id=uwu>
+      <div class="pelicula-principala">
+        <div class="contenedor">
+          <h3 id="tod" class="titulo">Cultura Mochica</h3>
+          <p class="descripcion">
+            “La cultura Mochica se desarrolló en los fértiles
+            valles de la Costa Norte del Perú aproximadamente
+            a partir del año 150 d.C.. En sus setecientos años de historia la cultura
+            Mochica fue gobernada por una elite que combinaba
+            el poder secular con una importante función ritual,
+            verdaderos dioses vivientes. La cultura mochica ha sido estudiada por diversos arqueólogos e historiadores. Entre estos destacan Max Uhle, un estudioso alemán a quien se le atribuye el descubrimiento de esta civilización. ……… Mochica”.
+          </p>
+          <button role="button" class="boton" onclick="playVideo('./img/entrada.mp4')"><i class="fas fa-play"></i>Reproducir</button>
+  <button role="button" class="boton" id="playVideoo" onclick="plaVideo('https://prezi.com/p/pb7cc-xu4e1b/embed/')"><i class="fas fa-info-circle"></i>Más información
+            </button>
+        </div>
+      </div>
+  
+      <div class="peliculas-recomendadas contenedor">
+        <div class="contenedor-titulo-controles">
+          <h3>Imagenes Relacionadas a la cultura Mochica </h3>
+          <div class="indicadores"></div>
+        </div>
+  
+        <div class="contenedor-principal" id="peru">
+          <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+  
+          <div class="contenedor-carousel">
+            <div class="carousel">
+              <div class="pelicula">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Max_Uhle.jpg/220px-Max_Uhle.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Mochica_headdress_Larco_museum.jpg/220px-Mochica_headdress_Larco_museum.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/MochePortrait.jpg/300px-MochePortrait.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+               <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/HLuna_Maqueta_lou.jpg/250px-HLuna_Maqueta_lou.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Ear_ornaments_from_Peru.jpg/250px-Ear_ornaments_from_Peru.jpg" alt="" width="300" height="300">
+              </div>
+              <div class="pelicula">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/H_Luna_Frisorestaurado_lou.jpg/220px-H_Luna_Frisorestaurado_lou.jpg" alt="" width="300" height="300">
+              </div>
+              
+              
+            </div>
+          </div>
+  
+          <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+        </div>
+      </div>
+    </main>
     <!-- informacion -->
     <section class="home">
         <div class="in-flex" id="dav">
@@ -110,9 +172,8 @@
         </div>
         <div class="in-flex">
             <div id="dav">
-              <a href="../internos/galeriamoche.html"><img src="../img/imgmoche/img1.jpg" alt=""
-                width="180" height="160"> Galeria </a>
-              <p><a href="../internos/videosmoche.html"><b>Videos</b></a></p>
+              <center><button class="lu"><a href="../internos/galeriamoche.html"> Galeria </a></button></center>
+              <center><button class="lu"><p><a href="../internos/videosmoche.html"><b>Videos</b></a></p></button></center>
             </div>
             <div id="dav"> <b id="rojo">Presentaciones PPT</b>
               <iframe id="power" src="https://onedrive.live.com/embed?cid=C0A8D587A2270671&amp;resid=C0A8D587A2270671%211105&amp;authkey=AJ8njDwsPpgU69k&amp;em=2&amp;wdAr=1.7777777777777777"
@@ -120,16 +181,49 @@
                   incrustado con tecnología de 
                   <a target="_blank" href="https://office.com/webapps">Office</a>.
               </iframe>
-
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/A7-OMC8APxM" title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+              <iframe width="420" height="260" src="https://www.youtube.com/embed/GKw4MGBL-QM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
               </iframe>
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/5tJFsJjqHg8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
+               </div>
         </div>
     </section>
 
 
+
+    <div class="video-player" id="videoPlayer">
+      <video width="100%" controls   id="myVideo">
+          <source src="paracas.mp4" type="video/mp4">
+      </video>
+      <img src="../img/close.png" class="close-btn" onclick="stopVideo()">
+  </div>
+  
+        <div class="video-playerr" id="videoPlayerr"> <iframe  src="https://prezi.com/p/pb7cc-xu4e1b/embed/"  id="myVideoo" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""  allow="autoplay; fullscreen" width="100%" height="750vmin"></iframe>
+      <img src="../img/close.png" class="close-btn" onclick="stopVideoo()"></div>
+
+    <script>
+      var videoPlayer=document.getElementById("videoPlayer");
+      var videoPlayerr=document.getElementById("videoPlayerr");
+      var myVideo=document.getElementById("myVideo")
+      
+      function stopVideo(){
+          videoPlayer.style.display = "none";
+          
+          myVideo.pause();
+      }  
+      function playVideo(file){
+          myVideo.src = file;
+          videoPlayer.style.display = "block"
+         
+      }function stopVideoo(){
+          
+          videoPlayerr.style.display = "none";
+          myVideo.pause();
+      }
+      function plaVideo(file){
+        myVideoo.src = file;
+          
+          videoPlayerr.style.display = "block"
+      }
+      </script>
     <!-- pie de pagina -->
     <footer class="w-100 d-flex align-items-center justify-content-center
        flex-wrap">
@@ -143,6 +237,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="main.js"></script>
-   
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="C:\Users\gomza\OneDrive\Escritorio\fb\Historia-master/ma.js"></script>
   </body>
 </html>
